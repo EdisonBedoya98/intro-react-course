@@ -13,7 +13,7 @@ function TodoList(props){
             {(!props.loading && !props.totalTodos)&&props.onEmptyTodos()}
             {(!!props.totalTodos && !props.searchedTodos.length) && props.onEmptySearchResults(props.searchText)}
             
-            {/* Una version simplificada al llamado del render props*/}
+            {/* Una version simplificada al llamado del render funtion*/}
             {/* {props.searchedTodos.map(todo =>props.render(todo))} */}
             {props.searchedTodos.map(renderFunc)}
 

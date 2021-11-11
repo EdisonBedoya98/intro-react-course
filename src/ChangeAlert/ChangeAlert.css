@@ -1,0 +1,31 @@
+.changeAlert{
+    background-color: rgb(5, 104, 150);
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    color: white;
+}
+.changeAlert__title{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.changeAlert__text{
+    font-size: 1.1rem;
+    
+}
+.changeAlert__reloadbtn{
+    display: block;
+    padding: 1rem;
+    background-color: rgb(6, 148, 214);
+    color: white;
+    border: none;
+    margin: 0 auto;
+    font-size: 1.1rem;
+   cursor: pointer; 
+   margin-top: 2rem;
+    
+    
+}
