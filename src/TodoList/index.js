@@ -15,7 +15,7 @@ function TodoList(props){
             
             {/* Una version simplificada al llamado del render funtion*/}
             {/* {props.searchedTodos.map(todo =>props.render(todo))} */}
-            {props.searchedTodos.map(renderFunc)}
+            {(!props.loading && !props.error) && props.searchedTodos.map(renderFunc)}
 
             <ul>
                 {props.children}

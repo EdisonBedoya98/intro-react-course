@@ -2,7 +2,7 @@
     background-color: rgb(5, 104, 150);
     height: 40%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 10;
     color: white;

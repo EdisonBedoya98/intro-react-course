@@ -10,7 +10,7 @@ import { Modal } from "../Modal";
 import "./App.css";
 import { Skeleton } from "../Skeleton";
 import { TodoHeader } from "../TodoHeader";
-import { ChangeAlertWithStorageListener } from "../ChangeAlert";
+import { ChangeAlert } from "../ChangeAlert";
 
 function App() {
   const {
@@ -78,7 +78,7 @@ function App() {
 
       <CreateTodoButton setOpenModal={setOpenModal} />
 
-      <ChangeAlertWithStorageListener 
+      <ChangeAlert 
         sincronize = {sincronizeTodos}
       />
     </React.Fragment>

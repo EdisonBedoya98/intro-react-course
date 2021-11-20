@@ -1,7 +1,8 @@
 import React from "react";
-import { withStorageListener } from "./withStorageListener";
+import { useStorageListener } from "./useStorageListener";
 import "./ChangeAlert.css";
-function ChangeAlert({show, toggleShow}){
+function ChangeAlert({sincronize}){
+    const {show, toggleShow}= useStorageListener(sincronize);
     if (show){
         return (
             <div className='changeAlert'>
@@ -10,7 +11,7 @@ function ChangeAlert({show, toggleShow}){
                  <button 
                     className='changeAlert__reloadbtn'
                     onClick={() => toggleShow()}
-                 >Volver a cargar la información</button>
+                 >Recargar</button>
             </div>
         );
     } else{
@@ -18,6 +19,4 @@ function ChangeAlert({show, toggleShow}){
     }
 }
 
-const ChangeAlertWithStorageListener = withStorageListener(ChangeAlert)
-
-export { ChangeAlertWithStorageListener };
+export { ChangeAlert };
